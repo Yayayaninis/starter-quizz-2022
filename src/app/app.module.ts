@@ -7,6 +7,11 @@ import { QuizListComponent } from './quizzes/quiz-list/quiz-list.component';
 import { QuizComponent } from './quizzes/quiz/quiz.component';
 import { HeaderComponent } from './header/header.component';
 import { QuizFormComponent } from './quizzes/quiz-form/quiz-form.component';
+import { MaquetteJeuComponent } from './maquetteJeu/maquetteJeu.component';
+import { MaquetteConfigComponent } from './maquetteConfig/maquetteConfig.component';
+import { MaquetteResultatComponent } from './maquetteResultat/maquetteResultat.component';
+import { MaquetteVoitureComponent } from './maquetteVoiture/maquetteVoiture.component';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +19,11 @@ import { QuizFormComponent } from './quizzes/quiz-form/quiz-form.component';
     QuizListComponent,
     QuizComponent,
     HeaderComponent,
-    QuizFormComponent
+    QuizFormComponent,
+    MaquetteJeuComponent,
+    MaquetteConfigComponent,
+    MaquetteResultatComponent,
+    MaquetteVoitureComponent
   ],
   imports: [
     BrowserModule,
