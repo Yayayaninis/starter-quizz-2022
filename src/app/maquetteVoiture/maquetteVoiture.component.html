@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MusiMots - Traffic Racer</title>
-    <link rel="stylesheet" href="./maquetteVoiture.component.html"/>
-</head>
-<body>
-    <div class="MaquetteJeu">
-        <div class="container">
-            <header>
-                <div class="logo">
-                    <div class="logo-icon">🎵</div>
-                    <span>MusiMots</span>
-                </div>
-                <div class="user-profile">
-                    <div class="user-avatar">L</div>
-                    <div class="user-info">
-                        <div class="user-name">Lucas</div>
-                        <div class="user-role">Niveau 2</div>
-                    </div>
-                </div>
-            </header>
-
-            <h2>Traffic Racer</h2>
-            
-            <div class="game-image-container">
-                <img src="./assets/test.png" alt="Jeu de voiture">
-                <div class="image-caption">Maquette du jeu</div>
-            </div>
-            
+<div class="maquette-voiture">
+    <div class="container">
+      <header>
+        <div class="logo">
+          <div class="logo-icon">🎵</div>
+          <span>MusiMots</span>
         </div>
+        <div class="user-profile">
+          <div class="user-avatar">L</div>
+          <div class="user-info">
+            <div class="user-name">Lucas</div>
+            <div class="user-role">Niveau 2</div>
+          </div>
+        </div>
+      </header>
+  
+      <h2>Traffic Racer</h2>
+      
+      <div class="game-container">
+        <div id="hud">
+          <span id="speed" class="hud"><span id="speed_value" class="value">0</span> km/h</span>
+          <span id="current_lap_time" class="hud">Temps: <span id="current_lap_time_value" class="value">0.0</span></span>
+          <span id="fast_lap_time" class="hud">Meilleur tour: <span id="fast_lap_time_value" class="value">0.0</span></span>
+        </div>
+        <canvas #gameCanvas id="gameCanvas">
+          Votre navigateur ne supporte pas Canvas. Merci d'utiliser un navigateur moderne.
+        </canvas>
+      </div>
+      
+      <div class="controls-info">
+        <p>Utilisez les <b>flèches directionnelles</b> pour conduire. <b>↑</b> pour accélérer, <b>↓</b> pour freiner.</p>
+      </div>
     </div>
-</body>
+  </div>
 </html>
