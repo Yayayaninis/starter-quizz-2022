@@ -11,6 +11,7 @@ import { MaquetteJeuComponent } from './maquetteJeu/maquetteJeu.component';
 import { MaquetteConfigComponent } from './maquetteConfig/maquetteConfig.component';
 import { MaquetteResultatComponent } from './maquetteResultat/maquetteResultat.component';
 import { MaquetteVoitureComponent } from './maquetteVoiture/maquetteVoiture.component';
+import { V4FinalComponent } from './racer/v4.final.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { MaquetteVoitureComponent } from './maquetteVoiture/maquetteVoiture.comp
     MaquetteJeuComponent,
     MaquetteConfigComponent,
     MaquetteResultatComponent,
-    MaquetteVoitureComponent
+    MaquetteVoitureComponent,
+    V4FinalComponent
   ],
   imports: [
     BrowserModule,
