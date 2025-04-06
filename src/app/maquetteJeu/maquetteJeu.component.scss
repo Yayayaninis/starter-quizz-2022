@@ -233,7 +233,7 @@
 
 .MaquetteJeu .word-chip {
     padding: 10px 15px;
-    background-color: var(--primary);
+    background-color: blueviolet;
     color: white;
     border-radius: 20px;
     font-weight: 500;
@@ -244,6 +244,7 @@
 
 .MaquetteJeu .word-chip:hover {
     transform: scale(1.05);
+    color:grey;
 }
 
 .MaquetteJeu .answer-container {
@@ -308,11 +309,15 @@
     }
 
     .MaquetteJeu .word-bank {
+        position: relative;
+        z-index: 10; /* Assure qu'il est au-dessus */
         gap: 5px;
-    }
+      }
 
     .MaquetteJeu .word-chip {
         padding: 8px 12px;
         font-size: 14px;
+        z-index: 10; /* Assure qu'il est au-dessus */
+        color: #333333;
     }
 }
