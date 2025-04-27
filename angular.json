@@ -33,7 +33,10 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/voiture/stats.js",
+              "src/assets/voiture/common.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -102,6 +105,7 @@
               "src/styles.scss"
             ],
             "scripts": []
+
           }
         },
         "lint": {
